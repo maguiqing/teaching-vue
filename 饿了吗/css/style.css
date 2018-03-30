@@ -1,0 +1,255 @@
+*{margin: 0;
+	padding: 0;
+	box-sizing:border-box;}
+html{width: 100%;
+height: 100%;}
+ul,ol,li{
+	list-style: none;
+}
+i{font-style:normal; }
+a{
+	text-decoration: none;
+}
+img{display: block;border:0;}
+html{font-size: 26.67vw;}
+#app{
+	width: 100%;
+    height: 100%; 
+	display: flex;
+	flex-direction:column;
+}
+body{
+	 width: 100%;
+    height: 100%;  
+    overflow-y:hidden;     
+}
+article{
+	flex:1;
+	overflow: auto;
+}
+header{
+	height: .76rem;
+	padding: .03rem 0 0 0;
+	background:#00a8ff;
+	font-size: .15rem;
+    color: #fff;
+}
+header .iconfont{
+	font-size: .13rem;
+}
+header .title{
+	padding: 0 0.12rem;
+	height: .36rem;
+	line-height: .36rem;
+}
+header .searchwrap{
+	width: 100%;
+    height: .37rem;
+    position: absolute;
+    left:0;
+    top:.36rem;
+    background:#00a8ff;
+    z-index:20;
+}
+header .search{
+	width: 3.51rem;
+	margin-left:.12rem;
+	margin-bottom: .04rem;
+	margin-top: .04rem;
+	color:#999999;
+	background: #fff;
+	text-align: center;
+	line-height: .29rem;
+	height: .29rem;
+	font-size: .13rem;
+	border-radius: .03rem;
+}
+header .search .iconfont{
+	font-size: .12rem;
+}
+
+section{
+	flex:1;
+	overflow: auto;
+}
+section i{
+	margin-left: .86rem;
+	font-size: .13rem;
+}
+ 
+section .banner{
+	width: 100%;
+	height: .94rem;
+	background: url(../img/1.jpg)no-repeat;
+	background-size:100%; 
+}
+section .menu{
+	width: 100%;
+	height: 1.6rem;
+}
+section .menu ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap:wrap;
+	align-content:flex-start;
+}
+section .menu li{
+	width: 20%;
+	height: .62rem;
+	float:left;
+	font-size: .11rem;
+	display: flex;
+	align-items:center;
+}
+section .menu li img{
+	width: .38rem;
+	height: .38rem;
+	margin:0 auto;
+}
+section .menu li a{
+	display: block;
+	margin: 0 auto;
+	color:#666;
+}	
+section .lunbo{
+	height: .71rem;
+	padding: 0 .09rem;
+	background: url(../img/2.jpg) no-repeat center top;
+}
+section .main{
+	height: 29.3333vw;
+	font-size: .11rem;
+	display: flex;
+	justify-content:center;
+	margin-bottom: 2.8vw;
+}
+section .main .item{
+    width: 46%;
+	background: linear-gradient(0deg,#f4f4f4 5%,#fafafa 95%);
+
+	position: relative;
+}
+section .item h3{
+	color:#f00;
+	font-size: .17rem;
+	margin-bottom: 1.3333vw;
+
+}
+section .item p{
+	color:#8e8e93;
+	font-size: .15rem;
+	margin-bottom: 2.4vw;
+}
+
+section .main .left{
+    
+	margin-right: .8vw;
+}
+section .main img{
+	width: 32vw;
+	height: 21.3333vw;
+	position: absolute;
+	right:0;
+	bottom:-2vw;
+}
+section h1{
+	height: 9.6vw;
+    width: 100%;
+	font-size: .17rem;
+	line-height: 9.6vw;
+	color:#333333;
+	text-align: center;
+}
+section h1::before{
+	content:"—";
+    color:#999;
+    margin-right: .05rem;
+}
+section h1::after{
+	
+	content:"—";
+	color:#999;
+	margin-left:.05rem;
+}
+section .list{
+	padding: 0 .09rem;
+	font-size: .12rem;
+	color:#666;
+}
+section .list .list1{
+	border-bottom: 1px dashed #ccc;
+	padding-top: 4vw;
+	display: flex;
+}
+section .list .list1 img{
+    float:left;
+    margin-right: .15rem;
+}
+section .list .list2 span{
+	display: block;
+	margin-left:.80rem;
+}
+section .list .list2{
+	padding-bottom: .2rem;
+	padding-top: 4vw;
+	border-bottom: 1px solid #eee;
+}
+section .list .list-item{
+   float:left;
+   display: flex;
+   flex-direction:column;
+   justify-content:space-between;
+   position: relative;
+} 
+section .list .list-item p{
+   font-size: .17rem;
+   color:#000;
+}
+section .list .list-item .last{
+	position: absolute;
+	right:0;
+	bottom:0;
+	text-align: right;
+}
+section .list .list-item .two{
+	display: flex;
+	justify-content:space-between;
+}
+section .list-item span{
+	display: block;
+}
+section .list img{
+	display: inline-block;
+}
+footer{
+	height: .44rem;
+	font-size: .1rem;
+	
+}
+footer ul{
+	display: flex;
+	justify-content:space-around;
+}
+footer li{
+	height: .44rem;
+	display: flex;
+	align-items:center;
+	text-align: center;
+}
+footer li a{
+	color:#8e8e93;
+}
+footer a.on{
+	color:#008aff;
+}
+footer li a .icon-weibiaoti1{
+	color:#008aff;
+}
+footer li .iconfont{
+   font-size: .16rem;
+   color:#8e8e93;
+}
+footer li span{
+	display: block;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+	
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/swiper-4.1.6.min.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qXsVf37U7IchmZZhVzdLA4f0qX11mhW3"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/swiper-4.1.6.min.js"></script>
+	</head>
+	<body>
+	    <div id="app">
+	        <article>
+	        	   <header-sea></header-sea>
+				   <section >
+					<div class="banner"></div>
+					<div class="swiper-container swiper-container-horizonal">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide swiper-slide-active">
+								<div class="menu" >
+									<ul>
+										<li v-for="item in shoplist">
+										   <a href="">
+										   	  <img :src="item.img2">
+											 <span href="">{{item.p}}</span>
+										   </a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide-next">
+								<div class="menu">
+									<ul>
+										<li>
+										   <a href="">
+										   	  <img src="img/m1.jpg">
+											<span href="">美食</span>
+										   </a>
+										</li>
+										<li>
+										   <a href="">
+										   	  <img src="img/m2.jpg">
+											<span href="">商超便利</span>
+										   </a>
+										</li>
+										
+									</ul>
+
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-pagination swiper-pagination-bullets">
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+						</div> 
+					</div>
+					
+					<div class="lunbo"></div>
+					<div class="main">
+						<div class="item left">
+							<h3>限量抢购</h3>
+							<p>超值美味9.9元起</p>
+							<span>1566人在抢</span>
+							<img src="img/s1.png">
+						</div>
+						<div class="item">
+							<h3>限量抢购</h3>
+							<p>超值美味9.9元起</p>
+							<span>1566人在抢</span>
+							<img src="img/s2.png">
+						</div>
+					</div>
+					<h1>推荐商家</h1>
+					<list-sea></list-sea>
+					
+				</section>
+	        </article>
+	    	   
+			<footer-sea></footer-sea>
+			
+	    </div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+    
+</script>
+                    
